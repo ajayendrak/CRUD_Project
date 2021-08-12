@@ -25,9 +25,9 @@
       {% csrf_token %}
       <div class="row">
                     <div class="col-md-6">
-                        <label class="form-label">Student Id : {{students.sid}}</label>
+                        <label class="form-label">Student Id : {{students.id}}</label>
                         <div class="md-form mb-0">
-                            <input type="hidden" class="form-control" id="sid" value="{{students.sid}}" name="sid">
+                            <input type="hidden" class="form-control" id="id" value="{{students.id}}" name="id">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -53,13 +53,17 @@
                 </div>
                 
                 <div class="text-center text-md-left">
-                  <a class="btn btn-outline-dark my-2" onclick="document.getElementById('fill-form').submit();">Update</a>
+                  <a class="btn btn-success my-2" onclick="document.getElementById('fill-form').submit();">Update</a>
+                  <br>
+                  <br>
+                  <a href="{% url 'show' %}" class='btn btn-success my2'>Show Student Data</a>
                 </div>
+
         
       </form>
     </div>
   </div>
-
+    
 </div>
 </section>
 

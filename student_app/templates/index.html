@@ -27,7 +27,7 @@
                     <div class="col-md-6">
                         <label class="form-label">Student Id</label>
                         <div class="md-form mb-0">
-                            <input type="number" class="form-control" id="sid" placeholder="Enter Student Id" name="sid">
+                            <input type="number" class="form-control" id="id" placeholder="Enter Student Id" name="id">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -53,7 +53,10 @@
                 </div>
                 
                 <div class="text-center text-md-left">
-                  <a class="btn btn-outline-dark my-2" onclick="document.getElementById('fill-form').submit();">Register</a>
+                  <a class="btn btn-success my-2" onclick="document.getElementById('fill-form').submit();">Register</a>
+                  <br>
+                  <br>
+                  <a href="{% url 'show' %}" class='btn btn-success my2'>Show Student Data</a>
                 </div>
         
       </form>

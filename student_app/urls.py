@@ -5,7 +5,7 @@ from student_app import views
 urlpatterns = [
     path('', views.std, name='std'),
     path('show', views.show, name='show'),
-    path('delete<int:sid>', views.delete, name='delete'),
-    path('update<int:sid>', views.update, name='update'),
+    path('delete<int:id>', views.delete, name='delete'),
+    path('update<int:id>', views.update, name='update'),
     
 ]
