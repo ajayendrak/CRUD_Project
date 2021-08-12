@@ -12,10 +12,6 @@ def std(request):
         birth_date=request.POST.get('birth_date')
         join_date=request.POST.get('join_date')
         
-        # If student exist already it will get deleted
-        # students = Students.objects.get(sid=sid)
-        # students.delete()
-        # And get saved latest values
         s_info=Students(id=id, name=name, birth_date=birth_date, join_date=join_date)
         s_info.save()
         return redirect('/show')
